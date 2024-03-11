@@ -1,0 +1,203 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 Oct 2021, 3:47:55 PM
+    Author     : Leolen Nair
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url(../img/blackTrees.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.banner{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url(../img/blackTrees.jpeg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: #d8d6d5;
+    position: fixed;
+    width: 100%;
+}
+
+.background{
+   background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url(../img/blackTrees.jpeg);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style-type:none;
+    display:inline-block;
+    margin: 0 20px;
+}
+.navbar ul li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #a3a194;
+}
+.navbar .icon {
+  display: none;  
+  color: black;
+  font-size: 30px
+}
+
+.main{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+iframe{
+    margin-left: 20%;
+    text-align: center;
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+.main h1{
+    font-size:50px; 
+}
+
+.column{
+    float: left;
+    width: 33.33%
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.form{
+   
+    text-align: center;
+    
+    
+}
+.photos{
+display: inline-block;
+margin-left: auto;    
+}
+
+.pic{ 
+
+width: 600px;
+height: 400px;
+}
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  padding: 20px; /* Some padding */
+}
+.side2{
+    flex: 30%;
+    padding: 20px;
+}
+
+.myImg{
+    width: 250px;
+    height: 200px;
+    
+}
+
+
+/* Main column */
+.main1 {
+  flex: 70%; /* Set the width of the main content */ 
+  padding: 20px; /* Some padding */
+}
+
+.main2 {
+  flex: 40%; /* Set the width of the main content */
+  /*background-image: url("../img/continant.jpg");*/
+  background-color: #a3a194;
+  padding: 20px; /* Some padding */
+}
+
+@media screen and (max-width: 1035px) {
+    .navbar ul:not(:first-child) {
+    display: none;
+    
+  }
+  .main{
+      margin-left: 0;
+      margin-right: 0;
+      font-weight: bold;
+  }
+  .pic{
+      margin-left: 15%;
+      display: flex;
+      align-content: center;
+      width: 250px;
+      height: 150px;
+  }
+    
+    .navbar a.icon {
+    float: right;
+    display: inline-block;
+  }
+  
+  .banner.main iframe:not(:first-child) {
+      display: none;
+      visibility: hidden;
+  }
+  .row:not(:first-child){
+      
+  }
+  
+}
+
+@media screen and (max-width: 1035px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: right;
+    display: block;
+    text-align: right;
+    color: black;
+  }
+  
+  }
+

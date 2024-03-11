@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Photo gallery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <link rel="stylesheet" href="css/Style.css">
+            <!--<link rel="stylesheet" href="css/stylesheet.css">-->
+            <script src="javascript/newjavascript.js" type="text/javascript"></script>
+            <style>
+.column1 {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  
+}
+
+/* Style the images inside the grid */
+.column1 img {
+    width: 250px;
+      height: 150px;
+  opacity: 0.8;
+  cursor: pointer;
+ 
+ 
+}
+
+.column1 img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #a3a194;
+  font-size: 35px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1035px) {
+    .column1 {
+  float: left;
+  width: 10%;
+  padding: 15px;
+  
+}
+}
+            </style>
+        
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar" id="myNavbar">
+                <img class="logo" src="img/africa logo_1.png" alt="logo">
+                <ul style="float: right; list-style: none; text-decoration: none;color: black;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About us</a></li>
+                    <li><a href="our_work.html">Our work</a>
+                    <li><a href="get_involved.html">Get involved</a></li>
+                    <li><a href="contact_us.html">contact us</a></li>
+                    <li><a href="photo_gallery.html">Gallery</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            
+            <div>
+                <br><br><br><br>
+                <h1 style="text-align: center; font-size: 50px">Save Africa Foundation</h1>
+               
+               
+            <div class="row1">
+                <div class="column1">
+                  <img src="img/SteveBiko.jpg" alt="Steve Biko academic hospital" onclick="myFunction1(this);">
+                </div>
+                <div class="column1">
+                  <img src="img/hands.jpg" alt="All children have equal rights" onclick="myFunction1(this);">
+                </div>
+                <div class="column1">
+                  <img src="img/little_girl.jpg" alt="Even babies are affected by poverty" onclick="myFunction1(this);">
+                </div>
+                <div class="column1">
+                  <img src="img/make_a_change.jpg" alt="make a change" onclick="myFunction1(this);">
+                </div>
+               <div class="column1">
+                  <img src="img/members.jpg" alt="SAF menbers" onclick="myFunction1(this);">
+                </div>
+                <div class="column1">
+                    <img src="img/medical.jpg" alt="SAF menbers" onclick="myFunction1(this);">
+                </div>
+                <div class="column1">
+                    <img src="img/Summit_group.jpg" alt="SAF menbers" onclick="myFunction1(this);">
+                </div>
+                <div class="column1">
+                    <img src="img/hope.jpg" alt="Hope is the best super power" onclick="myFunction1(this);">
+                </div>
+                <div class="column1">
+                    <img src="img/smiles.jpg" alt="Hope is the best super power" onclick="myFunction1(this);">
+                </div>   
+                <div class="column1">
+                    <img src="img/happiness.jpg" alt="Hope is the best super power" onclick="myFunction1(this);">
+                </div>   
+            </div>
+                
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+            </div>
+            
+        </div>
+        
+        <footer>
+        <div style="text-align: center">
+                <p style="color: white">
+                Author: Leolen Nair <br>
+                Thank you for your kindness and surpport for contact details <br>
+                please see <a href="contact_us.html">contact us page</a>
+                </p>
+                <p style="color: #ffffff">References: <a href="https://saveafricafoundation.org/">saveafricafoundation.org</a> 
+                    <br>
+                    <a href="https://www.google.com/search?q=africa+charity&sxsrf=AOaemvLVvyXJzTybkRuFJVfBDQd47ljHwQ:1631643695021&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjInd22iv_yAhXPgVwKHZXFBXQQ_AUoAXoECAIQAw&biw=1366&bih=581"
+                       >Google pictures</a></p>
+            </div>
+    </footer>
+    </body>
+    
+</html>
